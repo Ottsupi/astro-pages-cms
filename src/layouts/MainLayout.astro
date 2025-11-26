@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+
+        <title>Astro Container</title>
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body class="bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
+        <slot>
+            <div class="h-screen flex flex-row justify-center items-center">
+                <span class="text-6xl dark:text-white">
+                    <code>layouts/MainLayout.astro</code>
+                </span>
+            </div>
+        </slot>
+    </body>
+</html>
